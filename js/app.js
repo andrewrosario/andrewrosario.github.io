@@ -10,6 +10,7 @@ $(document).on('click', '#checkAvail', function() {
 var rentalPrice = 0;
 var weekDay = 250;
 var weekEnd = 450;
+var weeklyPrice = 2000;
 // var extraGuests = this.form.numGuests.value
 
 // function firstDay (form) {
@@ -46,6 +47,9 @@ function getQuote(form) {
 	// console.log(firstDay);
 	// console.log(typeof(firstDay));
 	for(i = firstDay; i <= numDays+firstDay-1; i++) {
+		if(numDays >= 7) {
+			rentalPrice = weeklyPrice * Math.floor(numDays/7);
+		}
 		if(i === 0) {
 			rentalPrice = rentalPrice + weekDay
 		}
