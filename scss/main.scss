@@ -1,0 +1,211 @@
+
+h2 {
+	font-size: 1.5em;
+	color: white;
+}
+
+h3 {
+	color: black;
+	text-align: center;
+}
+
+#calendar {
+	margin-top: -15px;
+}
+.quoteWrapper {
+	height: 75px;
+	border: none;
+	margin-bottom: 50px;
+	background-color: none;
+	text-align: center;
+	vertical-align: middle;
+}
+.fc-center > h2 {
+	font-family: Raleway;
+	font-style: italic;
+}
+body {
+	background-color: #DEDEDE;
+	/*#BFB7B4;*/
+	/*#00C7E6;*/
+	/*#0099B5*/
+}
+
+.quote {
+	background-color: #DE2429;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	background-color: #DE2429;
+
+}
+
+.top-bar-section li a:hover {	
+	background-color: #990000 !important;
+}
+
+.row > button:hover, .button:hover, button:focus, button {	
+	background-color: #990000;
+}
+button.reservation {
+	width: 100%;
+}
+
+.quote {
+	width: 100%;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+	background-color: #DE2429;
+	border-color: #990000;
+}
+
+
+.reservationWrap {
+	float: left;
+	margin-top: 50px;
+}
+
+.reservation {
+	margin-top: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+p {
+	text-align: center;
+	vertical-align: middle;
+}
+
+ul {
+	font-size: 1em;
+	list-style-type: none;
+	line-height: 2.5em;
+}
+.leftList {
+	text-align: right;
+}
+
+.leftList > img {
+	margin-left: 5px;
+}
+
+.row .row {
+	margin-top: 20px;
+}
+.icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.map {
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.slides {
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+a > button, .button {
+	background-color: #DE2429;
+}
+
+.amenities {
+	color: black;
+	margin-bottom: -18px;
+}
+.quote {
+	width: 100%;
+}
+
+/*Date Picker*/
+.ui-datepicker {
+	position: absolute;
+	top: 0px;
+	font-size: .7em !important;
+	text-align: center !important;
+
+}
+
+.ui-datepicker table tbody tr td  {
+	padding: 1px !important;
+	font-size: .5em !important;
+}
+
+
+.ui-datepicker-title {
+	text-align: center;
+	background: white;
+}
+
+table tr td th {
+	padding: 0px;
+	text-align: center;
+}
+
+#datepicker {
+	font-size: 62.5%;
+}
+
+
+.date {
+	min-width: 100px;
+	font-size: 10em;
+}
+
+select {
+	min-width: 75px;
+} 
+
+.ui-datepicker-next {
+	float: right;
+}
+
+.ui-datepicker-prev {  
+	float: left;
+}  
+
+/*Full Calendar*/
+/*.fc-toolbar > .fc-next-button, .fc-prev-button */
+.fc button {
+	height: 39px !important;
+	background-color: #333333;
+	background-image: none !important;
+	border-radius: 0px !important;
+	box-shadow: none !important;
+}
+
+.fc-next-button, .fc-prev-button :hover {
+	background-color: #333333;
+}
+.fc-icon {
+	color: white !important;
+}
+
+.fc-today {
+	background-color: #F0F0F0 !important;
+}
+
+tr > .fc-day-number {
+	font-weight: normal;
+}
+#calendar > .fc-toolbar {
+	background-color: #00C7E6;
+}
+#hideCalendar {
+	opacity: 0%;
+	z-index: 0;
+}
+.fc-content {
+	background-color: #DE2429;
+	color: #DE2429;
+}
+td > .fc-day-grid-event {
+	margin: 0px;
+}
+td > .fc-event {
+	border-color: white;
+}
