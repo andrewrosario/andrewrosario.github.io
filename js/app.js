@@ -49,6 +49,18 @@ function getQuote(form) {
 	for(i = firstDay; i <= numDays+firstDay-1; i++) {
 		if(numDays >= 7) {
 			rentalPrice = weeklyPrice * Math.floor(numDays/7);
+			for(j = 0; j<= numDays%7; i++) {
+				console.log(numDays%7)
+				if(firstDay+8 === 0) {
+					rentalPrice = rentalPrice + weekDay
+				}
+				else if ((firstDay + j + 8) % 6 === 0 || (firstDay + j + 8) % 6 === 0) {
+					rentalPrice = rentalPrice + weekEnd
+				}
+				else {
+					rentalPrice = rentalPrice + weekDay
+				}
+			}	
 		}
 		else if(i === 0) {
 			rentalPrice = rentalPrice + weekDay
