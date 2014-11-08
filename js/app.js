@@ -50,7 +50,7 @@ function getQuote(form) {
 		if(numDays >= 7) {
 			rentalPrice = weeklyPrice * Math.floor(numDays/7);
 		}
-		if(i === 0) {
+		else if(i === 0) {
 			rentalPrice = rentalPrice + weekDay
 		}
 		else if(i % 6 === 0 || i % 5 === 0) {
