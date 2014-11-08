@@ -8,7 +8,8 @@ $(document).on('click', '#checkAvail', function() {
 })
 
 
-var rentalPrice = 0
+var weekDay = 250
+var weekEnd = 450
 // var extraGuests = this.form.numGuests.value
 
 // function firstDay (form) {
@@ -46,14 +47,14 @@ function getQuote(form) {
 	// console.log(typeof(firstDay));
 	for(i = firstDay; i <= numDays+firstDay-1; i++) {
 		if(i === 0) {
-			rentalPrice = rentalPrice +1
+			rentalPrice = weekDay
 		}
 		else if(i % 6 === 0 || i % 5 === 0) {
-			rentalPrice = rentalPrice + 10
+			rentalPrice = weekEnd
 			// console.log(rentalPrice)
 		}
 		else {
-			rentalPrice = rentalPrice +1
+			rentalPrice = weekDay
 			// console.log(rentalPrice)
 		}
 		console.log("Rental Price is " + rentalPrice);
