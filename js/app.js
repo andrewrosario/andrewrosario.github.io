@@ -55,6 +55,7 @@ function getQuote(form) {
 					rentalPrice = rentalPrice + weekDay
 				}
 				else if ((firstDay + j + 8) % 6 === 0 || (firstDay + j + 8) % 6 === 0) {
+					console.log("else if" + firstDay+j+8)
 					rentalPrice = rentalPrice + weekEnd
 				}
 				else {
