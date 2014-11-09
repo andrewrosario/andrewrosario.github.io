@@ -69,20 +69,10 @@ function getQuote(form) {
 	var fullPrice = rentalPrice + 125 + ((extraGuests)*20);
 	// console.log("The full price is $" + fullPrice.toFixed(2));
 	
-	if(form.firstName.value === "First Name" || form.lastName.value === "Last Name" || form.email.value === "email address")
-	{
-		$('.button').before('<div class="quoteWrapper small-12 large-12 column"><h3>Please provide your full name and email address</h3></div>').slideDown()
-	}
-	else if (form.checkIn.value === "mm/dd/yyyy" || form.checkOut.value === "mm/dd/yyyy"){
-		$('.button').before('<div class="quoteWrapper small-12 large-12 column"><h3>Please provide an arrival and departure date.</h3></div>')
-	}
-	else if (numDays < 0) {
-		$('.button').before('<div class="quoteWrapper small-12 large-12 column"><h3>Make sure your arrival date is before your departure date.</h3></div>')
-	}
-	else {
+
 		$('.button').before('<div class="quoteWrapper small-12 large-12 column"><h3>Your request has been sent. <br> The estimated price is $' + fullPrice.toFixed(2) + '</h3></div>')
 		$('#quoteForm').submit()
-	}
+
 };
 
 $(document).on('focus', '.blur', function(){
