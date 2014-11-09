@@ -5,7 +5,7 @@ $(document).foundation();
 // Show/Hide Calendar
 $(document).on('click', '#checkAvail', function() {
 	$('#checkAvail').toggleClass('.hidden');
-})
+});
 
 var rentalPrice = 0;
 var weekDay = 250;
@@ -46,7 +46,7 @@ function getQuote(form) {
 	// console.log("stayLength is" + stayLength);
 	// console.log(firstDay);
 	// console.log(typeof(firstDay));
-	if(numDays >= 7) {
+	// if(numDays >= 7) {
 	for(i = firstDay; i <= numDays+firstDay-1; i++) {
 		if(i === 0) {
 			rentalPrice = rentalPrice + weekDay
@@ -86,7 +86,7 @@ function getQuote(form) {
 };
 
 $(document).on('focus', '.blur', function(){
-	console.log("click");
+	// console.log("click");
 	$(this).removeAttr('value');
 });
 
@@ -114,3 +114,32 @@ $(document).on('blur', '.blur', function(){
 
 });
 
+$(document).on( 'click', '.travelSection', function(event) {
+    event.preventDefault();
+    $( '.travelSection' ).removeClass( 'active' );
+    $(this).addClass( 'active' );
+    var id = $(this).attr("id");
+    getGuides(id);
+  });
+
+function getGuides(activity) {
+ $.getJSON( './json/' + course + '.json', function(json) {
+   makeGuide(json);
+ });
+};
+
+function makeGuide( json ) {
+      console.log(json)
+      html = '';
+      for( var i = 0; i < json.length; i++ ){
+        html += '<div class="activityGroup columns small-12">';
+        html += '<h4>' + json[i].section + '</h4>';
+        for( var j = 0; j < json[i].content.length; j++ ) {
+			html += '<div class="activityName">' + json[i].content[j].activityName + '</div>';
+			html += '<p class="activityDescription">' + json[i].content[j].activityDescription + '</p>';
+			html += '<div class="activityLink">' + json[i].content[j].price + '</div>';
+			html += '</div>';
+	        html += '</div>';
+      }
+      $( '.menu-section-content' ).html( html );
+    }
