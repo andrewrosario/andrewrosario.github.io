@@ -1,19 +1,19 @@
 [{
     "section": "",
     "content": [{
-        "activityName": "<a href='http://www.austintexas.org/listings/lady-bird-lake-hike-and-bike-trail/4369/'>Lady Bird Lake Hike and Bike Trail</a>",
+        "activityName": "<a href='http://www.austintexas.org/listings/lady-bird-lake-hike-and-bike-trail/4369/' target='_blank'>Lady Bird Lake Hike and Bike Trail</a>",
         "activityDescription": "Go for a run or a ride.",
         "activityLink": ""
     }, {
-        "activityName": "<a href='http://www.texasrowingcenter.com/'>Kayak and Stand Up Paddle Rental</a>",
+        "activityName": "<a href='http://www.texasrowingcenter.com/' target='_blank'>Kayak and Stand Up Paddle Rental</a>",
         "activityDescription": "Enjoy a row on the lake.",
         "activityLink": ""
     }, {
-        "activityName": "<a href='http://austintexas.gov/department/barton-springs-pool'>Barton Springs Pool</a>",
+        "activityName": "<a href='http://austintexas.gov/department/barton-springs-pool' target='_blank'>Barton Springs Pool</a>",
         "activityDescription": "marrow, lardo, spicy butter, house tortillas and cornbread",
         "activityLink": ""
     }, {
-        "activityName": "<a href='http://austintexas.gov/department/zilker-metropolitan-park'>Zilker Park</a>",
+        "activityName": "<a href='http://austintexas.gov/department/zilker-metropolitan-park' target='_blank'>Zilker Park</a>",
         "activityDescription": "Bring your dog.",
         "activityLink": 11
     }]

@@ -5,11 +5,11 @@
         "activityDescription": "Fine dining from Paul Qui",
         "activityLink": "http://quiaustin.com/"
     }, {
-        "activityName": "<a href='https://franklinbarbecue.com/'>Franklin Barbecue</a>",
+        "activityName": "<a href='https://franklinbarbecue.com/' target='_blank'>Franklin Barbecue</a>",
         "activityDescription": "Famous Texas BBQ, go early",
         "activityLink": "<a href='http://yelp.com'></a>"
     }, {
-        "activityName": "<a href='https://saltysow/'>Salty Sow</a>",
+        "activityName": "<a href='https://saltysow/' target='_blank'>Salty Sow</a>",
         "activityDescription": "American gastropub, whole animal focused",
         "activityLink": ""
     }]
