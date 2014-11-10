@@ -102,8 +102,8 @@ $(document).on( 'click', '.travelSection', function(event) {
       for( var i = 0; i < json.length; i++ ){
         html += '<div class="activityGroup column small-12">';
         for( var j = 0; j < json[i].content.length; j++ ) {
-			html += '<div class="activityItem small-12">';
-			html += '<div class="activityName small-4 small-centered column"><h3>' + json[i].content[j].activityName + '</h3></div>';
+			html += '<div class="activityItem small-12 column">';
+			html += '<div class="activityName small-12 column"><h3>' + json[i].content[j].activityName + '</h3></div>';
 			html += '<p class="activityDescription">' + json[i].content[j].activityDescription + '</p>';
 			html += '</div>';
         }
