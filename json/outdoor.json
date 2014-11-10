@@ -1,20 +1,20 @@
 [{
     "section": "",
     "content": [{
-        "activityName": "Michigan 'board'",
-        "activityDescription": "marrow, lardo, spicy butter, house tortillas and cornbread",
-        "activityLink": 11
+        "activityName": "<a href='http://www.austintexas.org/listings/lady-bird-lake-hike-and-bike-trail/4369/'>Lady Bird Lake Hike and Bike Trail</a>",
+        "activityDescription": "Go for a run or a ride.",
+        "activityLink": ""
     }, {
-        "activityName": "Michigan 'board'",
-        "activityDescription": "marrow, lardo, spicy butter, house tortillas and cornbread",
-        "activityLink": 11
+        "activityName": "<a href='http://www.texasrowingcenter.com/'>Kayak and Stand Up Paddle Rental</a>",
+        "activityDescription": "Enjoy a row on the lake.",
+        "activityLink": ""
     }, {
-        "activityName": "Michigan 'board'",
+        "activityName": "<a href='http://austintexas.gov/department/barton-springs-pool'>Barton Springs Pool</a>",
         "activityDescription": "marrow, lardo, spicy butter, house tortillas and cornbread",
-        "activityLink": 11
+        "activityLink": ""
     }, {
-        "activityName": "Michigan 'board'",
-        "activityDescription": "marrow, lardo, spicy butter, house tortillas and cornbread",
+        "activityName": "<a href='http://austintexas.gov/department/zilker-metropolitan-park'>Zilker Park</a>",
+        "activityDescription": "Bring your dog.",
         "activityLink": 11
     }]
 
