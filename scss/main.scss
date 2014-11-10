@@ -53,12 +53,14 @@ ul {
 	list-style-type: none;
 	line-height: 2.5em;
 }
-.leftList {
-	text-align: right;
-}
 
-.leftList > img {
+@media (min-width: 641px) {
+	.leftList {
+	text-align: right;
+	}
+	.leftList > img {
 	margin-left: 5px;
+	}
 }
 
 .row .row {
