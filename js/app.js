@@ -11,20 +11,6 @@ var rentalPrice = 0;
 var weekDay = 250;
 var weekEnd = 450;
 var weeklyPrice = 2000;
-// var extraGuests = this.form.numGuests.value
-
-// function firstDay (form) {
-// var fullDate = new Date(form.checkIn.value);
-// console.log(fullDate);
-// var d = fullDate.getDay();
-// return(d);
-// }
-
-// function numDays(form) {
-// 	var d1 = new Date (form.checkIn.value);
-// 	var d2 = new Date (form.checkOut.value);
-// 	return((d2 - d1)/(60*24*60*1000));
-// }
 
 function getQuote(form) {
 	// Remove Old Quotes
@@ -32,43 +18,28 @@ function getQuote(form) {
 	// Find Rental Rate
 	rentalPrice = 0;
 	var fullDate = new Date(form.checkIn.value.substring(6,10), form.checkIn.value.substring(0,2)-1, form.checkIn.value.substring(3,5));
-	// console.log(form.checkIn.value.substring(3,5));
-	// console.log(form.checkIn.value.substring(5,7));
-	// console.log(form.checkIn.value.substring(8,10));
-	// console.log(form.checkIn.value);
-	// console.log(fullDate);
 	var firstDay = fullDate.getDay();
-	// console.log("Day of the week is " + firstDay);
 	var d1 = new Date (form.checkIn.value);
 	var d2 = new Date (form.checkOut.value);
 	var numDays = (d2 - d1)/(60*24*60*1000);
-	// console.log("The stay is " + numDays + " nights");
-	// console.log("stayLength is" + stayLength);
-	// console.log(firstDay);
-	// console.log(typeof(firstDay));
-	// if(numDays >= 7) {
 	for(i = firstDay; i <= numDays+firstDay-1; i++) {
 		if(i === 0) {
 			rentalPrice = rentalPrice + weekDay
 		}
 		else if(i % 6 === 0 || i % 5 === 0) {
 			rentalPrice = rentalPrice+ weekEnd
-			// console.log(rentalPrice)
 		}
 		else {
 			rentalPrice = rentalPrice + weekDay
-			// console.log(rentalPrice)
 		}
 		console.log("Rental Price is " + rentalPrice);
 	}
 	// Find Extra Guests
 	var extraGuests = form.numGuests.value;
-	// console.log(extraGuests);
-	// console.log(form.checkIn.value);
-	// console.log(form.checkOut.value);
+	// Find Full Price
 	var fullPrice = rentalPrice + 125 + ((extraGuests)*20);
-	// console.log("The full price is $" + fullPrice.toFixed(2));
-	
+
+	// Makes sure all form imputs are filled out - Prints Quote
 	if(form.firstName.value === "First Name" || form.lastName.value === "Last Name" || form.email.value === "email address")
 	{
 		$('.button').before('<div class="quoteWrapper small-12 large-12 column"><h3>Please provide your full name and email address</h3></div>').slideDown()
@@ -85,14 +56,13 @@ function getQuote(form) {
 	}
 };
 
+// Removes Default Values for Form Fields
 $(document).on('focus', '.blur', function(){
-	// console.log("click");
 	$(this).removeAttr('value');
 });
 
+// Replaces Default Values if Nothing is entered
 $(document).on('blur', '.blur', function(){
-	// console.log("blug");
-	// console.log(this.name);
 	if(this.value === "") {
 		if(this.name === "firstName") {
 			$(this).attr('value', 'First Name')
@@ -109,37 +79,38 @@ $(document).on('blur', '.blur', function(){
 		else {
 			$(this).attr('value', 'Get a Quote')
 		};
-
 	};
-
 });
 
+// Travel Guide JSON
 $(document).on( 'click', '.travelSection', function(event) {
     event.preventDefault();
-    $( '.travelSection' ).removeClass( 'active' );
-    $(this).addClass( 'active' );
+    $('.travelSection').removeClass('active');
+    $( this ).addClass('active');
     var id = $(this).attr("id");
-    getGuides(id);
+    getGuide(id);
   });
 
-function getGuides(activity) {
- $.getJSON( './json/' + course + '.json', function(json) {
-   makeGuide(json);
- });
-};
+    function getGuide(activity) {
+     $.getJSON('json/' + activity + '.json', function(json) {
+       populateGuide(json);
+     });
+    }
 
-function makeGuide( json ) {
-      console.log(json)
+    function populateGuide( json ) {
       html = '';
       for( var i = 0; i < json.length; i++ ){
-        html += '<div class="activityGroup columns small-12">';
-        html += '<h4>' + json[i].section + '</h4>';
+        html += '<div class="activityGroup column small-12">';
         for( var j = 0; j < json[i].content.length; j++ ) {
-			html += '<div class="activityName">' + json[i].content[j].activityName + '</div>';
+			html += '<div class="activityItem small-12">';
+			html += '<div class="activityName small-4 small-centered column"><h3>' + json[i].content[j].activityName + '</h3></div>';
 			html += '<p class="activityDescription">' + json[i].content[j].activityDescription + '</p>';
-			html += '<div class="activityLink">' + json[i].content[j].price + '</div>';
 			html += '</div>';
-	        html += '</div>';
+        }
+        html += '</div>';
       }
-      $( '.menu-section-content' ).html( html );
+      $('.activityContent').html(html);
     }
+
+
+

@@ -1,4 +1,3 @@
-
 h2 {
 	font-size: 1.5em;
 	color: white;
@@ -20,10 +19,7 @@ h3 {
 	text-align: center;
 	vertical-align: middle;
 }
-.fc-center > h2 {
-	font-family: Raleway;
-	font-style: italic;
-}
+
 body {
 	background-color: #DEDEDE;
 	/*#BFB7B4;*/
@@ -33,32 +29,8 @@ body {
 
 .quote {
 	background-color: #DE2429;
-}
-.top-bar-section li.active:not(.has-form) a:not(.button) {
-	background-color: #DE2429;
-
-}
-
-.top-bar-section li a:hover {	
-	background-color: #990000 !important;
-}
-
-.row > button:hover, .button:hover, button:focus, button {	
-	background-color: #990000;
-}
-button.reservation {
 	width: 100%;
 }
-
-.quote {
-	width: 100%;
-}
-
-button:hover, button:focus, .button:hover, .button:focus {
-	background-color: #DE2429;
-	border-color: #990000;
-}
-
 
 .reservationWrap {
 	float: left;
@@ -71,7 +43,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 	padding-right: 0px;
 }
 
-p {
+.address {
 	text-align: center;
 	vertical-align: middle;
 }
@@ -103,11 +75,6 @@ ul {
 	display: inline-block;
 	margin-bottom: 10px;
 }
-.slides {
-	margin: 0 auto;
-	margin-top: 10px;
-	margin-bottom: 0px;
-}
 
 a > button, .button {
 	background-color: #DE2429;
@@ -117,8 +84,54 @@ a > button, .button {
 	color: black;
 	margin-bottom: -18px;
 }
-.quote {
+
+p {
+	text-align: center;
+}
+
+.activityName {
+	font-size: 1.5em;
+}
+
+h3 > a {
+	color: black;
+}
+
+.travelSection {
+	margin-top: 20px;
+}
+
+.travelSection.active {
+	border-bottom: 5px solid red;
+}
+/* Nav Menu */
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	background-color: #DE2429;
+
+}
+
+.top-bar-section li a:hover {	
+	background-color: #990000 !important;
+}
+
+/* Buttons */
+.row > button:hover, .button:hover, button:focus, button {	
+	background-color: #990000;
+}
+button.reservation {
 	width: 100%;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+	background-color: #DE2429;
+	border-color: #990000;
+}
+
+/* Slider */
+.slides {
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 0px;
 }
 
 /*Date Picker*/
@@ -208,4 +221,8 @@ td > .fc-day-grid-event {
 }
 td > .fc-event {
 	border-color: white;
+}
+.fc-center > h2 {
+	font-family: Raleway;
+	font-style: italic;
 }
