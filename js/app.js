@@ -83,7 +83,7 @@ function getQuote(form) {
 		$('.button').before('<div class="quoteWrapper small-12 large-12 column"><h3>Your request has been sent. <br> The estimated price is $' + fullPrice.toFixed(2) + '</h3></div>')
 		$('#quoteForm').submit()
 	}
-};
+
 
 // Removes Default Values for Form Fields
 $(document).on('focus', '.blur', function(){
