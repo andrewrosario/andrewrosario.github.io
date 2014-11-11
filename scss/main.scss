@@ -54,13 +54,14 @@ ul {
 	line-height: 2.5em;
 }
 
-@media (min-width: 641px) {
-	.leftList {
-	text-align: right;
-	}
-	.leftList > img {
-	margin-left: 5px;
-	}
+.rateInfo {
+	text-align: center;
+}
+
+.rates h3 {
+	margin-top: 40px;
+	font-family: Raleway;
+	font-style: italic;
 }
 
 .row .row {

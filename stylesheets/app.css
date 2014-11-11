@@ -9127,101 +9127,103 @@ ul {
   line-height: 2.5em;
 }
 
-/* line 56, ../scss/main.scss */
-.leftList {
-  text-align: right;
+/* line 57, ../scss/main.scss */
+.rateInfo {
+  text-align: center;
 }
 
-/* line 60, ../scss/main.scss */
-.leftList > img {
-  margin-left: 5px;
+/* line 61, ../scss/main.scss */
+.rates h3 {
+  margin-top: 40px;
+  font-family: Raleway;
+  font-style: italic;
 }
 
-/* line 64, ../scss/main.scss */
+/* line 67, ../scss/main.scss */
 .row .row {
   margin-top: 20px;
 }
 
-/* line 67, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 .icon {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
 
-/* line 73, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 .map {
   text-align: center;
   display: inline-block;
   margin-bottom: 10px;
 }
 
-/* line 79, ../scss/main.scss */
+/* line 82, ../scss/main.scss */
 a > button, .button {
   background-color: #DE2429;
 }
 
-/* line 83, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 .amenities {
   color: black;
   margin-bottom: -18px;
 }
 
-/* line 88, ../scss/main.scss */
+/* line 91, ../scss/main.scss */
 p {
   text-align: center;
 }
 
-/* line 92, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 .activityName {
   font-size: 1.5em;
 }
 
-/* line 96, ../scss/main.scss */
+/* line 99, ../scss/main.scss */
 h3 > a {
   color: black;
 }
 
-/* line 100, ../scss/main.scss */
+/* line 103, ../scss/main.scss */
 .travelSection {
   margin-top: 20px;
 }
 
-/* line 104, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 .travelSection.active {
   border-bottom: 5px solid red;
 }
 
 /* Nav Menu */
-/* line 108, ../scss/main.scss */
+/* line 111, ../scss/main.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   background-color: #DE2429;
 }
 
-/* line 113, ../scss/main.scss */
+/* line 116, ../scss/main.scss */
 .top-bar-section li a:hover {
   background-color: #990000 !important;
 }
 
 /* Buttons */
-/* line 118, ../scss/main.scss */
+/* line 121, ../scss/main.scss */
 .row > button:hover, .button:hover, button:focus, button {
   background-color: #990000;
 }
 
-/* line 121, ../scss/main.scss */
+/* line 124, ../scss/main.scss */
 button.reservation {
   width: 100%;
 }
 
-/* line 125, ../scss/main.scss */
+/* line 128, ../scss/main.scss */
 button:hover, button:focus, .button:hover, .button:focus {
   background-color: #DE2429;
   border-color: #990000;
 }
 
 /* Slider */
-/* line 131, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 .slides {
   margin: 0 auto;
   margin-top: 10px;
@@ -9229,7 +9231,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 /*Date Picker*/
-/* line 138, ../scss/main.scss */
+/* line 141, ../scss/main.scss */
 .ui-datepicker {
   position: absolute;
   top: 0px;
@@ -9237,53 +9239,53 @@ button:hover, button:focus, .button:hover, .button:focus {
   text-align: center !important;
 }
 
-/* line 146, ../scss/main.scss */
+/* line 149, ../scss/main.scss */
 .ui-datepicker table tbody tr td {
   padding: 1px !important;
   font-size: .5em !important;
 }
 
-/* line 152, ../scss/main.scss */
+/* line 155, ../scss/main.scss */
 .ui-datepicker-title {
   text-align: center;
   background: white;
 }
 
-/* line 157, ../scss/main.scss */
+/* line 160, ../scss/main.scss */
 table tr td th {
   padding: 0px;
   text-align: center;
 }
 
-/* line 162, ../scss/main.scss */
+/* line 165, ../scss/main.scss */
 #datepicker {
   font-size: 62.5%;
 }
 
-/* line 167, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 .date {
   min-width: 100px;
   font-size: 10em;
 }
 
-/* line 172, ../scss/main.scss */
+/* line 175, ../scss/main.scss */
 select {
   min-width: 75px;
 }
 
-/* line 176, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 .ui-datepicker-next {
   float: right;
 }
 
-/* line 180, ../scss/main.scss */
+/* line 183, ../scss/main.scss */
 .ui-datepicker-prev {
   float: left;
 }
 
 /*Full Calendar*/
 /*.fc-toolbar > .fc-next-button, .fc-prev-button */
-/* line 186, ../scss/main.scss */
+/* line 189, ../scss/main.scss */
 .fc button {
   height: 39px !important;
   background-color: #333333;
@@ -9292,54 +9294,54 @@ select {
   box-shadow: none !important;
 }
 
-/* line 194, ../scss/main.scss */
+/* line 197, ../scss/main.scss */
 .fc-next-button, .fc-prev-button :hover {
   background-color: #333333;
 }
 
-/* line 197, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 .fc-icon {
   color: white !important;
 }
 
-/* line 201, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
 .fc-today {
   background-color: #F0F0F0 !important;
 }
 
-/* line 205, ../scss/main.scss */
+/* line 208, ../scss/main.scss */
 tr > .fc-day-number {
   font-weight: normal;
 }
 
-/* line 208, ../scss/main.scss */
+/* line 211, ../scss/main.scss */
 #calendar > .fc-toolbar {
   background-color: #00C7E6;
 }
 
-/* line 211, ../scss/main.scss */
+/* line 214, ../scss/main.scss */
 #hideCalendar {
   opacity: 0%;
   z-index: 0;
 }
 
-/* line 215, ../scss/main.scss */
+/* line 218, ../scss/main.scss */
 .fc-content {
   background-color: #DE2429;
   color: #DE2429;
 }
 
-/* line 219, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 td > .fc-day-grid-event {
   margin: 0px;
 }
 
-/* line 222, ../scss/main.scss */
+/* line 225, ../scss/main.scss */
 td > .fc-event {
   border-color: white;
 }
 
-/* line 225, ../scss/main.scss */
+/* line 228, ../scss/main.scss */
 .fc-center > h2 {
   font-family: Raleway;
   font-style: italic;
