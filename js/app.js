@@ -66,9 +66,7 @@ function getQuote(form) {
 	var fullPrice = (rentalPrice + cleaningFee + (extraGuests*extraGuestFee*numDays)) * tax
 	console.log('rentalprice =  ' + rentalPrice)
 	console.log('fullPrice =  ' + fullPrice)
-};
-
-// Makes sure all form imputs are filled out - Prints Quote
+	// Makes sure all form imputs are filled out - Prints Quote
 	if(form.firstName.value === "First Name" || form.lastName.value === "Last Name" || form.email.value === "email address")
 	{
 		$('.button').before('<div class="quoteWrapper small-12 large-12 column"><h3>Please provide your full name and email address</h3></div>').slideDown()
@@ -83,7 +81,7 @@ function getQuote(form) {
 		$('.button').before('<div class="quoteWrapper small-12 large-12 column"><h3>Your request has been sent. <br> The estimated price is $' + fullPrice.toFixed(2) + '</h3></div>')
 		$('#quoteForm').submit()
 	}
-
+};
 
 // Removes Default Values for Form Fields
 $(document).on('focus', '.blur', function(){
