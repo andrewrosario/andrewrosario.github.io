@@ -113,7 +113,7 @@ $(document).on('blur', '.blur', function(){
 $(document).on( 'click', '.travelSection', function(event) {
     event.preventDefault();
     $('.travelSection').removeClass('active');
-    $( this ).addClass('active');
+    $( this ).addClass('active');  
     var id = $(this).attr("id");
     getGuide(id);
   });
